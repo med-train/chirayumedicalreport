@@ -1,0 +1,130 @@
+1. Purpose
+The purpose of this project is to create a mobile-friendly, responsive allergy report generator that allows doctors to easily record patient details, select allergy tests, add medications, and generate structured reports.
+The app will have template-based test entry, historical report retrieval, and a real-time preview of the final report.
+
+2. Scope
+The scope includes:
+
+Frontend: Responsive form and table views (optimized for mobile).
+
+Backend: APIs for saving patient data, medications, templates, and historical reports.
+
+Database: Store patient records, templates, and report data.
+
+Report Generation: View and download reports in a neatly formatted table.
+
+3. Core Features & Requirements
+3.1 Patient & Test Entry Form
+Fields:
+
+Name (text, required)
+
+Age (numeric, required)
+
+Sex (dropdown: Male/Female/Other, required)
+
+Doctor’s Name (text, required)
+
+Date & Time (auto-captured from system, read-only)
+
+Test Name (dropdown populated from saved templates, with search functionality)
+
+Mobile Number (numeric, optional, used for retrieving past reports)
+
+3.2 Medication Entry Table
+Table Columns:
+
+Test Row (text input)
+
+Antigen (text input)
+
+Wheal Diameter (numeric input)
+
+Remarks (checkbox — ticked = “Positive”, unticked = “Negative” by default)
+
+Functionalities:
+
+Ability to add/remove rows dynamically.
+
+If remarks checkbox is checked, mark cell as Positive, otherwise Negative.
+
+Data auto-updates in preview.
+
+3.3 Template Management
+When user enters Test Name and adds medications, they can save this as a template.
+
+Next time the same test name is selected, all associated medications auto-populate in the table.
+
+Support multiple test templates.
+
+Ability to edit/update a template.
+
+3.4 Report Preview
+Display a real-time preview of the report in a neat tabular format.
+
+Preview updates instantly when medication table is modified.
+
+Columns: Test Row, Antigen, Wheal Diameter, Remarks.
+
+Show patient details at the top of the preview.
+
+3.5 Report History & Retrieval
+When mobile number is entered:
+
+Display all previous reports for that patient.
+
+Show them as clickable list items with date & test name.
+
+On click, open report with an option to re-download.
+
+Old reports should open in same preview format.
+
+4. Functional Flow
+Doctor opens app → sees Patient Form & Medication Table.
+
+Doctor fills patient details → selects Test Name.
+
+If Test Name exists in templates, medications auto-populate.
+
+Doctor adds/edits medications, tick/untick remarks.
+
+Preview updates live.
+
+Doctor saves → stores report in database (and updates template if new).
+
+Entering mobile number → fetches history → doctor can view/download previous reports.
+
+5. Technical Requirements
+Frontend: HTML5, CSS3, JavaScript (React preferred for responsiveness)
+
+Backend: Node.js + Express.js
+
+Database: MongoDB or MySQL (depending on developer’s preference)
+
+Responsive Design: Mobile-first with support for tablets & desktops
+
+Deployment: Should run on Replit & be accessible from mobile browsers
+
+Export: Option to download report as PDF
+
+6. Acceptance Criteria
+Form auto-captures date & time without manual input.
+
+Test Name dropdown supports search and auto-population from templates.
+
+Remarks default to “Negative” unless checkbox is checked.
+
+Saved templates repopulate the table when selected.
+
+Preview matches actual report layout and updates in real-time.
+
+Historical reports load when mobile number is entered and can be downloaded.
+
+7. Future Enhancements (Phase 2)
+User login & authentication.
+
+Multi-language support.
+
+Direct report sharing via WhatsApp/Email.
+
+Cloud storage for PDFs.
