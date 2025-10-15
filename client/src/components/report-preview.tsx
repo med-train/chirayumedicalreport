@@ -121,7 +121,7 @@ DOCTOR’S SIGNATURE:
 
 INTERPRETATION:
 
-Reference Value (Wheal Diameter): ≥3mm = Positive. <3mm = Negative.
+Reference Value (Wheal Diameter): >3mm = Positive. <3mm = Negative.
 
 SALINE = Always should be negative for a valid test.
 HISTAMINE = Always should be positive for a valid test.
