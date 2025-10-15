@@ -128,7 +128,7 @@ export function PatientForm({ formData, currentDateTime, onFormDataChange, onTem
               data-testid="input-mobile"
             />
           </div>
-          <div>
+          {/* <div>
             <Label htmlFor="dateTime" className="block text-sm font-medium text-gray-700 mb-2">
               Date & Time
             </Label>
@@ -140,7 +140,7 @@ export function PatientForm({ formData, currentDateTime, onFormDataChange, onTem
               className="w-full bg-gray-50 text-gray-600"
               data-testid="input-datetime"
             />
-          </div>
+          </div> */}
            <div>
             <Label htmlFor="diagnosis" className="block text-sm font-medium text-gray-700 mb-2">
               Diagnosis<span className="text-red-600">*</span>

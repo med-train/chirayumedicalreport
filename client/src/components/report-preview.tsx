@@ -265,16 +265,19 @@ P = Pseudopods Flare ups   E = Erythema Reaction`);
               <p className="flex justify-between py-1"><span className="font-medium">Patient ID:</span> {formData.patientId || "—"}</p>
               <p className="flex justify-between py-1"><span className="font-medium">Age:</span> {formData.age ? `${formData.age} years` : "—"}</p>
               <p className="flex justify-between py-1"><span className="font-medium">Sex:</span> {formData.sex || "—"}</p>
-              <p className="flex justify-between py-1"><span className="font-medium">Time In:</span> {formData.timeIn ||"—"}</p>
+              <p className="flex justify-between py-1"><span className="font-medium">Test Name:</span> {formData.testName || "—"}</p>
+              <p className="flex justify-between py-1"><span className="font-medium">Diagnosis:</span> {formData.diagnosis || "—"}</p>
             </div>
             <div>
               <p className="flex justify-between py-1"><span className="font-medium">Doctor:</span> {formData.doctorName || "—"}</p>
               <p className="flex justify-between py-1"><span className="font-medium">Test Name:</span> {formData.testName || "—"}</p>
               <p className="flex justify-between py-1"><span className="font-medium">Mobile:</span> {formData.mobile || "—"}</p>
+               <p className="flex justify-between py-1"><span className="font-medium">Time In:</span> {formData.timeIn ||"—"}</p>
               <p className="flex justify-between py-1"><span className="font-medium">Time Out:</span> {formData.timeOut || "—"}</p>
-              <p className="flex justify-between py-1"><span className="font-medium">Diagnosis:</span> {formData.diagnosis || "—"}</p>
+             
             </div>
           </div>
+          
 
           {/* Test Results */}
           <h4 className="text-lg font-semibold text-gray-900 mb-3">Test Results</h4>

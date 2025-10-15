@@ -57,13 +57,14 @@ export function generatePDF(
     `Patient ID: ${formData.patientId || "—"}`,
     `Age: ${formData.age ? formData.age + " years" : "—"}`,
     `Sex: ${formData.sex || "—"}`,
-    `Time In: ${formData.timeIn || "—"}`,
+    `Test Name: ${formData.testName || "—"}`,
+   
   ];
 
   const patientInfoRight = [
     `Doctor: ${formData.doctorName || "—"}`,
-    `Test Name: ${formData.testName || "—"}`,
     `Mobile: ${formData.mobile || "—"}`,
+    `Time In: ${formData.timeIn || "—"}`,
     `Time Out: ${formData.timeOut || "—"}`,
     `Diagnosis: ${formData.diagnosis || "—"}`,
   ];
